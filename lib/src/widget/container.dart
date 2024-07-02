@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart' as material;
 import 'package:flutter/widgets.dart';
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 import '../neumorphic_box_shape.dart';
 import '../decoration/neumorphic_decorations.dart';
@@ -118,7 +119,7 @@ class _NeumorphicContainer extends StatelessWidget {
     final shape = this.style.boxShape ?? NeumorphicBoxShape.rect();
 
     return DefaultTextStyle(
-      style: this.textStyle ?? material.Theme.of(context).textTheme.bodyText2!,
+      style: this.textStyle ?? TextStyle(),
       child: AnimatedContainer(
         margin: this.margin,
         duration: this.duration,
