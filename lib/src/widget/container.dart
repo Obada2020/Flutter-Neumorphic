@@ -1,14 +1,9 @@
-import 'package:flutter/material.dart' as material;
-import 'package:flutter/widgets.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
-import '../neumorphic_box_shape.dart';
-import '../decoration/neumorphic_decorations.dart';
-import '../theme/neumorphic_theme.dart';
 import 'clipper/neumorphic_box_shape_clipper.dart';
 
-export '../neumorphic_box_shape.dart';
 export '../decoration/neumorphic_decorations.dart';
+export '../neumorphic_box_shape.dart';
 export '../theme/neumorphic_theme.dart';
 
 /// The main container of the Neumorphic UI KIT
@@ -119,7 +114,7 @@ class _NeumorphicContainer extends StatelessWidget {
     final shape = this.style.boxShape ?? NeumorphicBoxShape.rect();
 
     return DefaultTextStyle(
-      style: this.textStyle ?? TextStyle(),
+      style: this.textStyle ?? TextStyle(color: Colors.black),
       child: AnimatedContainer(
         margin: this.margin,
         duration: this.duration,

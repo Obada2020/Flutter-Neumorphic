@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/widgets.dart';
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 import 'neumorphic_emboss_decoration_painter.dart';
 import 'neumorphic_text_decoration_painter.dart';
@@ -106,7 +107,7 @@ class NeumorphicTextDecoration extends Decoration {
         isForeground: a.isForeground,
         text: a.text,
         textAlign: a.textAlign,
-        textStyle: TextStyle.lerp(a.textStyle, b.textStyle, t) ?? TextStyle(),
+        textStyle: TextStyle.lerp(a.textStyle, b.textStyle, t) ?? TextStyle(color: Colors.black),
         renderingByPath: a.renderingByPath,
         style: a.style.copyWith(
           border: NeumorphicBorder.lerp(aStyle.border, bStyle.border, t),
